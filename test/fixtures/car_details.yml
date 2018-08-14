@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  doors_count: 1
+  vin: MyString
+  car: one
+
+two:
+  year: 1
+  doors_count: 1
+  vin: MyString
+  car: two
