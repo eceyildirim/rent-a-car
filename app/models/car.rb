@@ -1,6 +1,7 @@
 class Car < ApplicationRecord
 
-has_one :car_detail
+has_one :car_detail, dependent: :destroy
+belongs_to :make, presence: true
 
 
 after_initialize do 

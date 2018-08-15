@@ -5,11 +5,11 @@ class CarDetail < ApplicationRecord
   uniqueness: {
   	case_sensitive: false,
   		message: "Benzersiz olmalıdır" }
-  		presence: {message: "alanı boş bırakılamaz"}
+  	#	presence: {message: "alanı boş bırakılamaz"}
 
 validates :year,
 numericality: {only_integer: true},
-inclusion: {in: 1990..Time.now.year},
+#inclusion: {in: 1990..Time.now.year},
 allow_blank: true
 
 validates :doors_count,

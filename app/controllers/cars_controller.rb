@@ -8,4 +8,9 @@ def index
 
 end
 
+def show
+	@car = Car.find_by(params[:id])
+	render :not_found unless @car
+end
+
 end

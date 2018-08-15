@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
 get '/cars', to: 'cars#index'
 
+get '/cars/:id(.:format)' => 'cars#show'
+
 
 end
